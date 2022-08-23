@@ -13,6 +13,11 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  
+stages:
+- stage: Build
+  jobs:
+    - job: Build
 
 # steps:
 # - task: NuGetToolInstaller@1
